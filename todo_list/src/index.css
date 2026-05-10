@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+:root {
+  background-color: #cbf6f3;
+}
+
+.card {
+  background-color: #03302d29;
+}

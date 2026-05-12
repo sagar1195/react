@@ -33,3 +33,50 @@
 - conclusion ye hai ki, react memo mast kam karta hai lekin, ye jyada effective usememo and usecallback ke sath hota hai
 
 - that means react memo, useMemo, useCallback ka use karke react me jyada optimizations ki ja skti hai.....
+
+------------------------------------------------------------------------------
+# useMemo()
+
+-- Hook
+-- memoize (save, cache)
+
+cart page - too many products - total price (expensive caluclation)
+
+expensive calculation - time^^
+
+state --> e.c -- time^^
+
+
+multiply
+
+2*3 --> 6
+4*3 --> 12
+2*3 --> 6
+
+
+# useMemo React ka hook hai jo expensive calculation ke result ko cache karta hai taaki unnecessary re-computation na ho.
+
+# useMemo value ko memoize karta hai
+# useCallback fn ko memoize karta hai
+
+-----------------------------------------------------------------------------------
+# useCallback
+
+--> lifecycle, react memo, useMemo
+
+✅ Every re-render = functions are recreated
+
+Even if logic is same, function reference changes
+
+# useCallback is a React hook that memoizes a function, so the same function reference is reused between renders unless dependencies change.
+
+# thank you much
+
+
+# kha kha use nahi karna hai isse:-
+
+- function as a props pass nahi kar rhe ho tab
+- small application
+- light weight component
+
+# useMemo value memoize karta hai, and useCallback function memoize kar rha hota hai...!!!!
